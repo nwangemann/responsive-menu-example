@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100vw;
+    min-height: 10vh;
+    background-color: aqua;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+}
+
+.navigation, .not-mobile {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mobile-menu-show {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: aqua;
+}
+
+.mobile-menu-hide {
+    display: none;
+}
+
+a {
+    margin: 0 5px;
+}
+
+.hamburger{
+    height: 50px;
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    .hamburger {
+        display: inline-block;
+    }
+    .navigation {
+        display: none;
+    }
+}
